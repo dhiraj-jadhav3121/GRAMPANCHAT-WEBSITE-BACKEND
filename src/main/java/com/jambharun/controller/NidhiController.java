@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.jambharun.controller;
 
-import com.example.entity.Nidhi;
-import com.example.service.NidhiService;
+import com.jambharun.entity.Nidhi;
+import com.jambharun.service.NidhiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

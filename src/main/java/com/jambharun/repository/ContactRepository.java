@@ -1,6 +1,6 @@
-package com.example.repository;
+package com.jambharun.repository;
 
-import com.example.entity.Contact;
+import com.jambharun.entity.Contact;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ContactRepository extends JpaRepository<Contact, Long> {

@@ -1,7 +1,7 @@
-package com.example.service;
+package com.jambharun.service;
 
-import com.example.entity.Nidhi;
-import com.example.repository.NidhiRepository;
+import com.jambharun.entity.Nidhi;
+import com.jambharun.repository.NidhiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

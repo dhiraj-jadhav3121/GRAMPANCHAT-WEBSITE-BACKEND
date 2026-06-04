@@ -1,7 +1,7 @@
-package com.example.service;
+package com.jambharun.service;
 
-import com.example.entity.Contact;
-import com.example.repository.ContactRepository;
+import com.jambharun.entity.Contact;
+import com.jambharun.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

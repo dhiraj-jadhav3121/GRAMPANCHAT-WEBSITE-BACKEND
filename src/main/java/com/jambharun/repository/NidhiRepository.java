@@ -1,6 +1,6 @@
-package com.example.repository;
+package com.jambharun.repository;
 
-import com.example.entity.Nidhi;
+import com.jambharun.entity.Nidhi;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface NidhiRepository extends JpaRepository<Nidhi, Long> {

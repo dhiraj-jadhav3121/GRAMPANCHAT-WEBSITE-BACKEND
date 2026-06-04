@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.jambharun.controller;
 
-import com.example.entity.Gallery;
-import com.example.repository.GalleryRepository;
+import com.jambharun.entity.Gallery;
+import com.jambharun.repository.GalleryRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

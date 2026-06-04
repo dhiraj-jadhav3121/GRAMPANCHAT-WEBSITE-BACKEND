@@ -1,8 +1,8 @@
-package com.example.controller;
+package com.jambharun.controller;
 
-import com.example.entity.Admin;
-import com.example.repository.AdminRepository;
-import com.example.service.EmailService;
+import com.jambharun.entity.Admin;
+import com.jambharun.repository.AdminRepository;
+import com.jambharun.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.jambharun.controller;
 
-import com.example.entity.Notice;
-import com.example.service.NoticeService;
+import com.jambharun.entity.Notice;
+import com.jambharun.service.NoticeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

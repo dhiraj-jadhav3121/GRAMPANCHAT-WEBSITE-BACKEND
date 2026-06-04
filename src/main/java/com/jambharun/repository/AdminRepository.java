@@ -1,6 +1,6 @@
-package com.example.repository;
+package com.jambharun.repository;
 
-import com.example.entity.Admin;
+import com.jambharun.entity.Admin;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
