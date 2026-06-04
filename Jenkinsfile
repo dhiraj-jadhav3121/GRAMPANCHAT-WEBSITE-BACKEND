@@ -13,12 +13,6 @@ pipeline {
             }
         }
 
-        stage('Check Maven Version') {
-            steps {
-                bat 'mvn -version'
-            }
-        }
-
         stage('Run Test Cases') {
             steps {
                 bat 'mvn clean test'
@@ -31,16 +25,29 @@ pipeline {
             }
         }
 
-        stage('Archive Jar') {
+        stage('Build Docker Image') {
             steps {
-                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+                bat 'docker build -t grampanchayat-backend:latest .'
+            }
+        }
+
+        stage('Stop Old Container') {
+            steps {
+                bat 'docker stop grampanchayat-backend || exit 0'
+                bat 'docker rm grampanchayat-backend || exit 0'
+            }
+        }
+
+        stage('Run Docker Container') {
+            steps {
+                bat 'docker run -d --name grampanchayat-backend -p 8080:8080 grampanchayat-backend:latest'
             }
         }
     }
 
     post {
         success {
-            echo 'Grampanchayat Backend Pipeline Successful'
+            echo 'Grampanchayat Backend Docker Deployment Successful'
         }
         failure {
             echo 'Pipeline Failed. Check console output.'
