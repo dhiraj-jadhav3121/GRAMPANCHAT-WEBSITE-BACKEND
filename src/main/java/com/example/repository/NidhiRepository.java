@@ -1,6 +1,6 @@
-package com.example.GRAMPANCHAT_WEBSITE.repository;
+package com.example.repository;
 
-import com.example.GRAMPANCHAT_WEBSITE.entity.Nidhi;
+import com.example.entity.Nidhi;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface NidhiRepository extends JpaRepository<Nidhi, Long> {

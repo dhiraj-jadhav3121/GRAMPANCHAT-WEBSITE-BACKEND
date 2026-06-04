@@ -1,7 +1,7 @@
-package com.example.GRAMPANCHAT_WEBSITE.controller;
+package com.example.controller;
 
-import com.example.GRAMPANCHAT_WEBSITE.entity.Gallery;
-import com.example.GRAMPANCHAT_WEBSITE.repository.GalleryRepository;
+import com.example.entity.Gallery;
+import com.example.repository.GalleryRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

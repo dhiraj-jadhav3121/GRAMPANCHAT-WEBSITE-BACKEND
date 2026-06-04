@@ -1,6 +1,6 @@
-package com.example.GRAMPANCHAT_WEBSITE.repository;
+package com.example.repository;
 
-import com.example.GRAMPANCHAT_WEBSITE.entity.Admin;
+import com.example.entity.Admin;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

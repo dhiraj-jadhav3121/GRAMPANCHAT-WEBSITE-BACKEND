@@ -1,4 +1,4 @@
-package com.example.GRAMPANCHAT_WEBSITE.service;
+package com.example.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;

@@ -1,4 +1,4 @@
-package com.example.GRAMPANCHAT_WEBSITE.entity;
+package com.example.entity;
 
 import jakarta.persistence.*;
 

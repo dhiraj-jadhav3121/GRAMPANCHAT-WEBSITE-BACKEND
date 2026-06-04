@@ -1,6 +1,6 @@
-package com.example.GRAMPANCHAT_WEBSITE.repository;
+package com.example.repository;
 
-import com.example.GRAMPANCHAT_WEBSITE.entity.Contact;
+import com.example.entity.Contact;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ContactRepository extends JpaRepository<Contact, Long> {

@@ -1,12 +1,11 @@
-package com.example.GRAMPANCHAT_WEBSITE.controller;
+package com.example.controller;
 
-import com.example.GRAMPANCHAT_WEBSITE.entity.Admin;
-import com.example.GRAMPANCHAT_WEBSITE.repository.AdminRepository;
-import com.example.GRAMPANCHAT_WEBSITE.service.EmailService;
+import com.example.entity.Admin;
+import com.example.repository.AdminRepository;
+import com.example.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;

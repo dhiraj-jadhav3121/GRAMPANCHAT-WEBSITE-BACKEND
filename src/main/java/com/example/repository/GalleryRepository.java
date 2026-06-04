@@ -1,5 +1,5 @@
-package com.example.GRAMPANCHAT_WEBSITE.repository;
-import com.example.GRAMPANCHAT_WEBSITE.entity.Gallery;
+package com.example.repository;
+import com.example.entity.Gallery;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface GalleryRepository extends JpaRepository<Gallery, Long> {

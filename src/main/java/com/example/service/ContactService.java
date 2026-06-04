@@ -1,7 +1,7 @@
-package com.example.GRAMPANCHAT_WEBSITE.service;
+package com.example.service;
 
-import com.example.GRAMPANCHAT_WEBSITE.entity.Contact;
-import com.example.GRAMPANCHAT_WEBSITE.repository.ContactRepository;
+import com.example.entity.Contact;
+import com.example.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

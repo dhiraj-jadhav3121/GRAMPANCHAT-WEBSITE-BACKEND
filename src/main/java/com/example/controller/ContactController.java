@@ -1,7 +1,7 @@
-package com.example.GRAMPANCHAT_WEBSITE.controller;
+package com.example.controller;
 
-import com.example.GRAMPANCHAT_WEBSITE.entity.Contact;
-import com.example.GRAMPANCHAT_WEBSITE.service.ContactService;
+import com.example.entity.Contact;
+import com.example.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
