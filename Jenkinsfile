@@ -5,11 +5,21 @@ pipeline {
         jdk 'java-21'
     }
 
+    environment {
+        DOCKER_EXE = 'C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe'
+    }
+
     stages {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
                         url: 'https://github.com/dhiraj-jadhav3121/GRAMPANCHAT-WEBSITE-BACKEND.git'
+            }
+        }
+
+        stage('Check Maven') {
+            steps {
+                bat 'mvn -version'
             }
         }
 
@@ -25,22 +35,28 @@ pipeline {
             }
         }
 
+        stage('Check Docker') {
+            steps {
+                bat "\"${DOCKER_EXE}\" --version"
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t grampanchayat-backend:latest .'
+                bat "\"${DOCKER_EXE}\" build -t grampanchayat-backend:latest ."
             }
         }
 
         stage('Stop Old Container') {
             steps {
-                bat 'docker stop grampanchayat-backend || exit 0'
-                bat 'docker rm grampanchayat-backend || exit 0'
+                bat "\"${DOCKER_EXE}\" stop grampanchayat-backend || exit 0"
+                bat "\"${DOCKER_EXE}\" rm grampanchayat-backend || exit 0"
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                bat 'docker run -d --name grampanchayat-backend -p 8080:8080 grampanchayat-backend:latest'
+                bat "\"${DOCKER_EXE}\" run -d --name grampanchayat-backend -p 8082:8080 grampanchayat-backend:latest"
             }
         }
     }
