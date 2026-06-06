@@ -13,7 +13,6 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/gallery")
-@CrossOrigin(origins = {"http://localhost:5173"})
 public class GalleryController {
 
     @Autowired

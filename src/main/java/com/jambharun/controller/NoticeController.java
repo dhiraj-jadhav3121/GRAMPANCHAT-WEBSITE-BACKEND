@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/notices")
-@CrossOrigin(origins = "http://localhost:5173")
 public class NoticeController {
 
     @Autowired
