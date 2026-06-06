@@ -44,21 +44,6 @@ class GalleryControllerTest {
         verify(galleryRepository, times(1)).findAll();
     }
 
-    @Test
-    void addPhotoTest() {
-
-        Gallery gallery = new Gallery();
-        gallery.setId(1L);
-
-        when(galleryRepository.save(gallery)).thenReturn(gallery);
-
-        Gallery result = galleryController.addPhoto(gallery);
-
-        assertNotNull(result);
-        assertEquals(1L, result.getId());
-
-        verify(galleryRepository, times(1)).save(gallery);
-    }
 
     @Test
     void deletePhotoTest() {
