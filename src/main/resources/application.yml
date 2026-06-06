@@ -1,32 +1,31 @@
-  spring:
-    application:
-      name: GRAMPANCHAT-WEBSITE
+spring:
+  application:
+    name: GRAMPANCHAT-WEBSITE
 
-    datasource:
-      url: jdbc:mysql://localhost:3306/gram_panchayat
-      username: root
-      password: Amol@1234
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
-    jpa:
-      hibernate:
-        ddl-auto: update
-      show-sql: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
-    mail:
-      host: smtp.gmail.com
-      port: 587
-      username: dhirajj8048@gmail.com
-      password: aqjf ufve jady thxi
-      properties:
-        mail:
-          smtp:
-            auth: true
-            starttls:
-              enable: true
-              required: true
-            ssl:
-              trust: smtp.gmail.com
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            trust: smtp.gmail.com
 
-  server:
-    port: 8082
-
+server:
+  port: ${PORT:8082}
